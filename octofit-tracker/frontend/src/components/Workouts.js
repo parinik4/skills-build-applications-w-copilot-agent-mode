@@ -88,13 +88,13 @@ function Workouts() {
             </thead>
             <tbody>
               {workouts.map((workout) => (
-                <tr key={workout.id}>
-                  <td><span className="badge bg-primary">{workout.id}</span></td>
+                <tr key={workout._id}>
+                  <td><span className="badge bg-primary">{workout._id}</span></td>
                   <td>
-                    <strong>{workout.name || 'N/A'}</strong>
+                    <strong>{workout.workout || 'N/A'}</strong>
                   </td>
-                  <td><span className="badge bg-secondary">{workout.type || 'N/A'}</span></td>
-                  <td className="text-center">⏱️ {workout.duration || 'N/A'}</td>
+                  <td><span className="badge bg-secondary">{workout.reps || 0} reps</span></td>
+                  <td className="text-center">💪 Exercise</td>
                 </tr>
               ))}
             </tbody>

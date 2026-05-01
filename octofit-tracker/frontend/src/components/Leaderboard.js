@@ -88,7 +88,7 @@ function Leaderboard() {
             </thead>
             <tbody>
               {leaderboard.map((entry, index) => (
-                <tr key={entry.id || index}>
+                <tr key={entry._id || index}>
                   <td className="text-center">
                     {index === 0 ? (
                       <span className="badge bg-warning text-dark">🥇 1</span>
@@ -102,9 +102,9 @@ function Leaderboard() {
                   </td>
                   <td>{entry.user || 'N/A'}</td>
                   <td className="text-center">
-                    <span className="badge bg-success">{entry.score || 0}</span>
+                    <span className="badge bg-success">{entry.points || 0} pts</span>
                   </td>
-                  <td>{entry.team || 'N/A'}</td>
+                  <td>🏆 Rank {index + 1}</td>
                 </tr>
               ))}
             </tbody>

@@ -88,10 +88,10 @@ function Users() {
             </thead>
             <tbody>
               {users.map((user) => (
-                <tr key={user.id}>
-                  <td><span className="badge bg-primary">{user.id}</span></td>
+                <tr key={user._id}>
+                  <td><span className="badge bg-primary">{user._id}</span></td>
                   <td>
-                    <strong>{user.username || 'N/A'}</strong>
+                    <strong>{user.name || 'N/A'}</strong>
                   </td>
                   <td>{user.email || 'N/A'}</td>
                   <td>{user.team ? <span className="badge bg-success">{user.team}</span> : <span className="text-muted">Not assigned</span>}</td>

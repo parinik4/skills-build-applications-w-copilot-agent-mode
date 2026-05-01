@@ -88,11 +88,11 @@ function Activities() {
             </thead>
             <tbody>
               {activities.map((activity) => (
-                <tr key={activity.id}>
-                  <td><span className="badge bg-primary">{activity.id}</span></td>
+                <tr key={activity._id}>
+                  <td><span className="badge bg-primary">{activity._id}</span></td>
                   <td>{activity.type || 'N/A'}</td>
-                  <td>{activity.date || 'N/A'}</td>
-                  <td>{activity.duration || 'N/A'}</td>
+                  <td>{activity.distance ? `${activity.distance} km` : 'N/A'}</td>
+                  <td>{activity.duration ? `${activity.duration} min` : 'N/A'}</td>
                 </tr>
               ))}
             </tbody>

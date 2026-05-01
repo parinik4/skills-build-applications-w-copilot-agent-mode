@@ -88,16 +88,16 @@ function Teams() {
             </thead>
             <tbody>
               {teams.map((team) => (
-                <tr key={team.id}>
-                  <td><span className="badge bg-primary">{team.id}</span></td>
+                <tr key={team._id}>
+                  <td><span className="badge bg-primary">{team._id}</span></td>
                   <td>
                     <strong>{team.name || 'N/A'}</strong>
                   </td>
                   <td className="text-center">
-                    <span className="badge bg-info">{team.members || 0}</span>
+                    <span className="badge bg-info">Team</span>
                   </td>
                   <td className="text-center">
-                    <span className="badge bg-success">{team.score || 0}</span>
+                    <span className="badge bg-success">Active</span>
                   </td>
                 </tr>
               ))}
