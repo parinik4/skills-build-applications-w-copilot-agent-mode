@@ -1,0 +1,431 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4f8 0%, #e8f4f8 100%);
+}
+
+/* Navigation Bar Styling */
+.navbar {
+  box-shadow: 0 4px 12px rgba(0, 150, 200, 0.2);
+  background: linear-gradient(135deg, #00796b 0%, #00a884 100%);
+  border-bottom: 4px solid #00d4a6;
+}
+
+.navbar-brand {
+  font-size: 1.5rem !important;
+  font-weight: bold;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-brand:hover {
+  color: #00ffe0 !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link {
+  margin-left: 10px;
+  transition: all 0.3s ease !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #00ffe0 !important;
+  text-shadow: 0 0 8px rgba(0, 255, 224, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Main Content Area */
+main {
+  flex: 1;
+  padding: 20px 0;
+  background: linear-gradient(180deg, #f0f4f8 0%, #e0f2f1 100%);
+}
+
+.container {
+  max-width: 1200px;
+}
+
+/* Home Page */
+.hero-section {
+  background: linear-gradient(135deg, #00796b 0%, #00a884 50%, #00d4a6 100%);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 30px;
+  box-shadow: 0 8px 25px rgba(0, 150, 200, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.hero-section p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #e0f2f1;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #00796b;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 121, 107, 0.1);
+}
+
+h2 {
+  border-bottom: 3px solid #00d4a6;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+/* Tables */
+.table {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 150, 200, 0.15);
+}
+
+.table thead {
+  background: linear-gradient(135deg, #00796b 0%, #00a884 100%);
+  color: white;
+}
+
+.table thead th {
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding: 15px;
+  letter-spacing: 0.5px;
+  color: #e0f2f1;
+}
+
+.table tbody td {
+  padding: 12px 15px;
+  vertical-align: middle;
+  border-color: #b2dfdb;
+  color: #00695c;
+}
+
+.table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+  background-color: #e0f2f1;
+  transform: scale(1.01);
+}
+
+.table-responsive {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 150, 200, 0.2);
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  border-left: 5px solid #00d4a6;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 150, 200, 0.35);
+  border-left: 5px solid #00ffe0;
+}
+
+.card-header {
+  background: linear-gradient(135deg, #00796b 0%, #00a884 100%);
+  color: white;
+  border: none;
+  font-weight: 700;
+  border-radius: 12px 12px 0 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 20px;
+  color: #00695c;
+}
+
+.card-title {
+  color: #00796b;
+  font-weight: 700;
+}
+
+.card-text {
+  color: #00897b;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 8px;
+  font-weight: 700;
+  padding: 10px 18px;
+  transition: all 0.3s ease;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #00796b 0%, #00a884 100%);
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #00695c 0%, #00968f 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 150, 200, 0.4);
+  color: #00ffe0;
+}
+
+.btn-primary:active {
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #455a64 0%, #546e7a 100%);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, #37474f 0%, #455a64 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(70, 90, 100, 0.4);
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #00a680 0%, #00c896 100%);
+  color: white;
+}
+
+.btn-success:hover {
+  background: linear-gradient(135deg, #009973 0%, #00b886 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 212, 166, 0.4);
+}
+
+/* Forms */
+.form-control {
+  border-radius: 8px;
+  border: 2px solid #b2dfdb;
+  padding: 10px 12px;
+  transition: all 0.3s ease;
+  color: #00695c;
+  font-weight: 500;
+}
+
+.form-control:focus {
+  border-color: #00d4a6;
+  box-shadow: 0 0 0 0.3rem rgba(0, 212, 166, 0.25);
+  background-color: #f0f9f9;
+}
+
+.form-label {
+  color: #00796b;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* Alert Messages */
+.alert {
+  border: none;
+  border-radius: 10px;
+  padding: 15px 20px;
+  border-left: 5px solid;
+  font-weight: 500;
+}
+
+.alert-info {
+  background: linear-gradient(135deg, #d1efff 0%, #b3e5fc 100%);
+  color: #01579b;
+  border-left-color: #0277bd;
+}
+
+.alert-warning {
+  background: linear-gradient(135deg, #fff8e1 0%, #ffe0b2 100%);
+  color: #f57f17;
+  border-left-color: #fbc02d;
+}
+
+.alert-danger {
+  background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+  color: #c62828;
+  border-left-color: #e53935;
+}
+
+.alert-success {
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  color: #1b5e20;
+  border-left-color: #388e3c;
+}
+
+/* Loading and Error States */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  color: #00796b;
+}
+
+.spinner-border {
+  color: #00d4a6 !important;
+  width: 3rem;
+  height: 3rem;
+}
+
+.error-message {
+  background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+  color: #c62828;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+  border-left: 5px solid #e53935;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #00897b;
+}
+
+.empty-state h5 {
+  color: #00796b;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+/* Modals */
+.modal-content {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 150, 200, 0.3);
+}
+
+.modal-header {
+  background: linear-gradient(135deg, #00796b 0%, #00a884 100%);
+  color: white;
+  border: none;
+  border-radius: 12px 12px 0 0;
+}
+
+.modal-header .btn-close {
+  filter: brightness(0) invert(1);
+}
+
+.modal-footer {
+  border-top: 2px solid #b2dfdb;
+  background-color: #f0f9f9;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #00796b 0%, #00a884 100%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  border-top: 4px solid #00d4a6;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Badges */
+.badge {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: linear-gradient(135deg, #00796b 0%, #00a884 100%);
+}
+
+.badge-primary {
+  background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%) !important;
+}
+
+.badge-success {
+  background: linear-gradient(135deg, #00796b 0%, #00a884 100%) !important;
+}
+
+.badge-info {
+  background: linear-gradient(135deg, #0277bd 0%, #01579b 100%) !important;
+}
+
+.badge-secondary {
+  background: linear-gradient(135deg, #455a64 0%, #37474f 100%) !important;
+}
+
+.badge-warning {
+  background: linear-gradient(135deg, #f57f17 0%, #e65100 100%) !important;
+  color: white;
+}
+
+.badge-danger {
+  background: linear-gradient(135deg, #c62828 0%, #b71c1c 100%) !important;
+}
+
+/* Links */
+a {
+  color: #00796b;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #00d4a6;
+  text-shadow: 0 0 8px rgba(0, 212, 166, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .table {
+    font-size: 0.85rem;
+  }
+
+  .table thead th {
+    padding: 10px;
+  }
+
+  .table tbody td {
+    padding: 8px 10px;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem !important;
+  }
+
+  .nav-link {
+    margin-left: 0;
+    padding: 8px 0;
+  }
+}
